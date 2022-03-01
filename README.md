@@ -1,7 +1,7 @@
 # CSE518 Teamproject
 
 ## Members
-+ Sungjin Cho: sungjin.cho@stonybrook.edu
++ Shubhangi Saileja Rabichandra Garnaik: ShubhangiSaile.Garnaik@stonybrook.edu
 + Youngchan Lim: youngchan.lim@stonybrook.edu
 
 ## Todo
