@@ -4,7 +4,9 @@
 + Shubhangi Saileja Rabichandra Garnaik: ShubhangiSaile.Garnaik@stonybrook.edu
 + Youngchan Lim: youngchan.lim@stonybrook.edu
 
-## Todo
+## Introduction
+![image](https://user-images.githubusercontent.com/64450791/156603753-fbf46d0f-cd0f-4903-a590-f078592433de.png)
+
 - Your tentative target user population
   - it cannot be “everyone” or "college students"
 - The problem your product will be solving. 
