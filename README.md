@@ -5,15 +5,8 @@
 + Youngchan Lim: youngchan.lim@stonybrook.edu
 
 ## Introduction
-![image](https://user-images.githubusercontent.com/64450791/156603753-fbf46d0f-cd0f-4903-a590-f078592433de.png)
+![image](https://user-images.githubusercontent.com/64450791/156607062-77de141a-972e-4c17-b8ba-6b5e359e88c5.png)
+source(url):https://know.tour.go.kr/ (Tourism Knowledge & Information System sponsered by Ministry of Culture, Sports and Tourism)
+The above chart represents the number of overseas tourists visiting Korea from 2010 to 2021. The number of overseas tours continued to increase before the COVID-19 incident. In line with the demand caused by the increase in overseas tourists and overseas visitors, public institutions carry out various IT service projects for foreigners.
 
-- Your tentative target user population
-  - it cannot be “everyone” or "college students"
-- The problem your product will be solving. 
-  - Explain how your solution will be unique or different than existing solutions.
-- Provide at least two or three existing or related solutions 
-  - Provide a brief description of these solutions and link
-- Your plan to find people in your target population to interview them 
-  - potentially also survey or observe 
-  - This could be via a specific online forum, in-person at certain locations, attending a meetup, etc. 
-  - Describe the specific process you will use to find these people, as you will need to interview at least 3 target users for the next assignment
++ Before COVID-19, Korea recieved 
