@@ -34,6 +34,8 @@ Various web/app applications have been launched, and services for foreigners in 
   <img src="https://user-images.githubusercontent.com/64450791/156617821-10fa67cd-b3a0-4ce0-9c76-ef2291e48de2.png" width="30%" height="30%">
   </p>
   
+  - Other example B: [Japan emergency App](https://play.google.com/store/apps/details?id=jp.co.rcsc.safetyTips.android)
+  
 ### Suggesting Solutions
 1. Comeup with more applicapable functions or methods to get help in certain circumstances. 
       - Health emergency, Personal safety and security (accident and crime)
