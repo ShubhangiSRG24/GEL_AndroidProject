@@ -19,9 +19,9 @@ Various web/app applications have been launched, and services for foreigners in 
 ### Problems
 1. Translations: [Emergency Alerts For Foreigners Get Lost In Translation](http://tbs.seoul.kr/eFm/newsView.do?typ_800=P&idx_800=3449286&seq_800=20441863)
 2. Unfriendly UI/UX
-3. Services with low useability
+3. Services with low usability
       - Search Shelter, Emergency Medical Centers, Fire Stations, Police Stations: Just information of locations
-      - Safety Guide: Videos such as CPR for infants, CPR for Adults, First Aid(Burn injuries from fires), Fire Extinguisher& indoor fire hydrant
+      - Safety Guide: Videos such as CPR for infants, CPR for Adults, First Aid(Burn injuries from fires), Fire Extinguisher and indoor fire hydrant
       - 119 Emergency Call (Direct Call)
       - Disaster Alert translation
 4. Low visibility, no feedback, no affordance
@@ -56,8 +56,8 @@ Various web/app applications have been launched, and services for foreigners in 
 
 ### Interview
 - Method
-  1. Meeting with foreigners who have experience faced emergencies in Korea
-  2. Survey with foreigners who have experience faced emergencies in Korea
+  1. Meeting with foreigners who lived Korea
+  2. Online survey
 - Target
-  1. SUNY Korea students, facalties or their families who have been in Korea
-  2. 
+  1. SUNY Korea students, facalties or their families - non-native 
+  2. Foreign Employees at Korean companies
