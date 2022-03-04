@@ -7,7 +7,7 @@
 ## Project
 ### Introduction
 ![image](https://user-images.githubusercontent.com/64450791/156607062-77de141a-972e-4c17-b8ba-6b5e359e88c5.png)
-*Source: [Tourism Knowledge & Information System](https://know.tour.go.kr/)*
+*Source: [Tourism Knowledge & Information System](https://know.tour.go.kr/english.do)*
 
 
 
