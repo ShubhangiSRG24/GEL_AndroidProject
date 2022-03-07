@@ -56,8 +56,8 @@ Various web/app applications have been launched, and services for foreigners in 
 
 ### Interview
 - Method
-  1. Meeting with foreigners who lived Korea
-  2. Online survey
+  1. Interact and observe over Zoom meetings 
+  2. Meet in person 
 - Target
-  1. SUNY Korea students, facalties or their families - non-native 
+  1. Friends and Family members who live in Korea or had visited sometime before
   2. Foreign Employees at Korean companies
