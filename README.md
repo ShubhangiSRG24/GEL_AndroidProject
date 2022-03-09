@@ -46,7 +46,6 @@ Various web/app applications have been launched, and services for foreigners in 
 3. Cleaner design
       - Comeup with better design to achive better interaction
 4. COVID19 Related functions
-      - Food delivery during Quarantine
       - Quick update of News or Policy
 5. etc.
 
