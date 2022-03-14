@@ -54,9 +54,5 @@ Various web/app applications have been launched, and services for foreigners in 
 **_Updates might be done after interviews._**
 
 ### Interview
-- Method
-  1. Interact and observe over Zoom meetings 
-  2. Meet in person 
-- Target
-  1. Friends and Family members who live in Korea or had visited sometime before
-  2. Foreign Employees at Korean companies
+- Survey: [Survey Link](https://forms.gle/dc6X9ECwaaUJX7iL6)
+- Target: Friends and Family members who live in Korea or had visited sometime before
