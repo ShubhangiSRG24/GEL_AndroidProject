@@ -56,3 +56,7 @@ Various web/app applications have been launched, and services for foreigners in 
 ### Interview
 - Survey: [Survey Link](https://forms.gle/dc6X9ECwaaUJX7iL6)
 - Target: Friends and Family members who live in Korea or had visited sometime before
+[Foreign Students in Korea](https://www.facebook.com/groups/foreignstudentsinkorea)
+[Foreigners in South Korea - Community](https://www.facebook.com/groups/foreignersinsouthkorea)
+[image](https://user-images.githubusercontent.com/64450791/158743488-df82bf9e-f918-46a4-a091-427f90a541c7.png)
+
