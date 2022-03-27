@@ -1,4 +1,5 @@
-# CSE518 Teamproject
+# GEL (Goto Emergency Land)
+## CSE518 Teamproject
 
 ## Members
 + Shubhangi Saileja Rabichandra Garnaik: ShubhangiSaile.Garnaik@stonybrook.edu
