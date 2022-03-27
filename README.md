@@ -45,9 +45,7 @@ Various web/app applications have been launched, and services for foreigners in 
       - Various language select: Emergency message or alert message must be in the language selected by the user
 3. Cleaner design
       - Comeup with better design to achive better interaction
-4. COVID19 Related functions
-      - Quick update of News or Policy
-5. etc.
+4. etc.
 
 
 
