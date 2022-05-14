@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_userInformation"
         android:name="com.example.gel_beta.ui.user_information.UserFragment"
         android:label="User Information"
         tools:layout="@layout/fragment_user" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_contacts"
         android:name="com.example.gel_beta.ui.contacts.ContatctsFragment"
         android:label="Contacts"
         tools:layout="@layout/fragment_contacts" />

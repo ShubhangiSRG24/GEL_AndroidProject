@@ -9,11 +9,11 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_userInformation"
             android:icon="@drawable/ic_baseline_userinfo_24"
             android:title="User Information" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_contacts"
             android:icon="@drawable/ic_baseline_info_24"
             android:title="Contacts" />
     </group>

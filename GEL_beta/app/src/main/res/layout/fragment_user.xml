@@ -6,4 +6,5 @@
     android:layout_height="match_parent"
     tools:context=".ui.user_information.UserFragment">
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
