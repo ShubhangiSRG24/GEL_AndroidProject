@@ -7,7 +7,7 @@
     tools:context=".ui.contacts.ContatctsFragment">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView"
         android:layout_width="379dp"
         android:layout_height="694dp"
         android:src="@drawable/contacts"
@@ -15,6 +15,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
