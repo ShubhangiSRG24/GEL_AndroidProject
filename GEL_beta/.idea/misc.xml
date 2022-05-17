@@ -9,6 +9,7 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/emergency_background.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/emergency_section_background.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/home_background.xml" value="0.35885416666666664" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/home_background2.xml" value="0.260546875" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_airplanemode_active_24.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.3463541666666667" />
@@ -19,6 +20,7 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_load_foreground.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_loading.xml" value="0.3463541666666667" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_local_police.xml" value="0.260546875" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_medication_black_24dp.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_outline_account_circle_24.xml" value="0.3463541666666667" />
@@ -27,13 +29,20 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/security_background.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/user_background.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/usermenu_background.xml" value="0.3463541666666667" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_call.xml" value="0.1210788064269319" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_call_emergency.xml" value="0.1" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_emergency_call.xml" value="0.2359375" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_loading.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_main.xml" value="0.2672239108409321" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_police_call.xml" value="0.2484375" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/app_bar_main.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/content_main.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_contacts.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_emergency_call.xml" value="0.24765625" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_fullscreen.xml" value="0.23671875" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_user.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_security_call.xml" value="0.24765625" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_user.xml" value="0.33" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/nav_header_main.xml" value="0.67" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/settings_activity.xml" value="0.24765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/menu/activity_main_drawer.xml" value="0.3302083333333333" />

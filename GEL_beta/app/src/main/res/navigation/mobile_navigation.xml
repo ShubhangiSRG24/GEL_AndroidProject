@@ -22,4 +22,5 @@
         android:name="com.example.gel_beta.ui.contacts.ContatctsFragment"
         android:label="Contacts"
         tools:layout="@layout/fragment_contacts" />
+
 </navigation>

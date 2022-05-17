@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GEL_beta">
         <activity
+            android:name=".ui.home.PoliceCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.EmergencyCallActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoadingActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
@@ -24,7 +30,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.GEL_beta.NoActionBar"></activity>
+            android:theme="@style/Theme.GEL_beta.NoActionBar" />
     </application>
 
 </manifest>
