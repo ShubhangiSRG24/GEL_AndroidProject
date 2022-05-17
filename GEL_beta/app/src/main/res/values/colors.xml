@@ -11,4 +11,8 @@
     <color name="security_blue">#0C4FE8</color>
     <color name="emergency_red_70">#BFDC4040</color>
     <color name="security_blue_70">#BF0C4FE8</color>
+    <color name="emergency_red_50">#80DC4040</color>
+    <color name="security_blue_50">#800C4FE8</color>
+    <color name="emergency_red_30">#4DDC4040</color>
+    <color name="security_blue_30">#4D0C4FE8</color>
 </resources>

@@ -9,8 +9,16 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.gel_beta.R
 
 class ContatctsFragment : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_contacts, container, false)
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState:Bundle?): View? {
+
+
+
+
+        return inflater.inflate(R.layout.fragment_contacts, container, false);
     }
 
     override fun onDestroyView() {

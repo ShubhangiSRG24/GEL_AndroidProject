@@ -20,6 +20,6 @@ public class LoadingActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },2000);
+        },1000);
     }
 }

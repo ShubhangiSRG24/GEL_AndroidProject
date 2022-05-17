@@ -16,6 +16,7 @@
             android:theme="@style/LoadingTheme">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
+
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
@@ -23,8 +24,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.GEL_beta.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.GEL_beta.NoActionBar"></activity>
     </application>
 
 </manifest>

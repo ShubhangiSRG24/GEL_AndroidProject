@@ -3,4 +3,10 @@
     <style name="LoadingTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:background">@color/white</item>
     </style>
+    <style name="Button.Emergeny" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/emergency_red</item>
+    </style>
+    <style name="Button.Security" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/security_blue</item>
+    </style>
 </resources>

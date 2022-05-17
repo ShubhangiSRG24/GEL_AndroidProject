@@ -6,21 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.gel_beta.R
 
 class UserFragment : Fragment() {
-
-    private lateinit var userViewModel: UserViewModel
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
-        return null
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState:Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_user, container, false);
     }
 
     override fun onDestroyView() {
