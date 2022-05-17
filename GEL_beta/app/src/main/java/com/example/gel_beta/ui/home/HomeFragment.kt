@@ -54,7 +54,10 @@ class HomeFragment : Fragment(), View.OnClickListener{
             }
             R.id.emergency_simple -> { println("emergency_simple clicked!") }
             R.id.security_text -> { println("security_text clicked!") }
-            R.id.map -> { println("map clicked!") }
+            R.id.map -> {
+                val nextIntent = Intent(context, MapsActivity::class.java)
+                startActivity(nextIntent)
+            }
         }
     }
 }
