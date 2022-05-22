@@ -60,7 +60,9 @@ class HomeFragment : Fragment(), View.OnClickListener{
                 var nextIntent = Intent(context, SimpleMedActivity::class.java)
                 startActivity(nextIntent)
             }
-            R.id.security_text -> { println("security_text clicked!") }
+            R.id.security_text -> {
+                val nextIntent = Intent(context, TextMessageActivity::class.java)
+                startActivity(nextIntent) }
             R.id.map -> {
                 val nextIntent = Intent(context, MapsActivity::class.java)
                 startActivity(nextIntent)

@@ -21,48 +21,4 @@
         app:layout_constraintVertical_bias="0.0"
         tools:context=".ui.home.MapsActivity" />
 
-    <com.google.android.material.chip.ChipGroup
-        android:id="@+id/chipGroup"
-        android:layout_width="109dp"
-        android:layout_height="95dp"
-        app:chipSpacingHorizontal="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        app:singleSelection="true">
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/btn_chip_medical"
-            android:layout_width="wrap_content"
-            android:layout_height="47dp"
-            android:backgroundTint="@color/emergency_red"
-            android:text="Medical Help"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/btn_chip_security"
-            android:layout_width="wrap_content"
-            android:layout_height="47dp"
-            android:backgroundTint="@color/security_blue"
-            android:text="Security Help"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-    </com.google.android.material.chip.ChipGroup>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
