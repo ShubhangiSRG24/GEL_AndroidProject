@@ -42,8 +42,6 @@ class ContactsFragment : Fragment(), View.OnClickListener{
         return view
     }
 
-
-
     override fun onDestroyView() {
         super.onDestroyView()
     }

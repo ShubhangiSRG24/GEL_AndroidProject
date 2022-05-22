@@ -11,6 +11,7 @@
         android:layout_width="398dp"
         android:layout_height="110dp"
         android:backgroundTint="@color/purple_500"
+        android:drawableTop="@drawable/btn_map"
         android:text="Map"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

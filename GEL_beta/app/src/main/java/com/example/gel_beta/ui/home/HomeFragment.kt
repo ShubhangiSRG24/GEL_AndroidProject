@@ -1,5 +1,6 @@
 package com.example.gel_beta.ui.home
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -55,7 +56,10 @@ class HomeFragment : Fragment(), View.OnClickListener{
                 var nextIntent = Intent(Intent.ACTION_DIAL, Uri.parse(num))
                 startActivity(nextIntent)
             }
-            R.id.emergency_simple -> { println("emergency_simple clicked!") }
+            R.id.emergency_simple -> {
+                var nextIntent = Intent(context, SimpleMedActivity::class.java)
+                startActivity(nextIntent)
+            }
             R.id.security_text -> { println("security_text clicked!") }
             R.id.map -> {
                 val nextIntent = Intent(context, MapsActivity::class.java)
