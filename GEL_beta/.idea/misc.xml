@@ -8,6 +8,7 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/btn_police.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/color_background.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/emergency_background.xml" value="0.259765625" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/emergency_radius.xml" value="0.31328125" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/emergency_section_background.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/home_background.xml" value="0.35885416666666664" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/home_background2.xml" value="0.260546875" />
@@ -28,6 +29,9 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_userProfile.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/load_background.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/medicine_button_background.xml" value="0.3463541666666667" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/radius.xml" value="0.31328125" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/radius_map.xml" value="0.259765625" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/securit_radius.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/security_background.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/user_background.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/usermenu_background.xml" value="0.3463541666666667" />
