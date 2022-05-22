@@ -1,6 +1,7 @@
 package com.example.gel_beta.ui.home
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -45,11 +46,13 @@ class HomeFragment : Fragment(), View.OnClickListener{
     override fun onClick(p0: View?) {
         when(p0?.id){
             R.id.emergency_call -> {
-                val nextIntent = Intent(context, EmergencyCallActivity::class.java)
+                val num = "tel:119"
+                var nextIntent = Intent(Intent.ACTION_DIAL, Uri.parse(num))
                 startActivity(nextIntent)
             }
             R.id.security_call -> {
-                val nextIntent = Intent(context, PoliceCallActivity::class.java)
+                val num = "tel:112"
+                var nextIntent = Intent(Intent.ACTION_DIAL, Uri.parse(num))
                 startActivity(nextIntent)
             }
             R.id.emergency_simple -> { println("emergency_simple clicked!") }

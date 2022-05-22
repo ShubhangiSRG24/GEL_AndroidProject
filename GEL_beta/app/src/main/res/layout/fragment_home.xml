@@ -10,14 +10,14 @@
         android:id="@+id/map"
         android:layout_width="398dp"
         android:layout_height="110dp"
-        android:backgroundTint="@color/cardview_dark_background"
+        android:backgroundTint="@color/purple_500"
         android:text="Map"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/security_call"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintVertical_bias="0.311" />
 
     <TextView
         android:id="@+id/textView_map"
@@ -40,7 +40,7 @@
         android:drawableTop="@drawable/btn_ambulance"
         android:drawingCacheQuality="auto"
         android:gravity="bottom|center"
-        android:text="Ambulance Call\n"
+        android:text="Ambulance Call(119)\n"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.966"
@@ -55,7 +55,7 @@
         android:backgroundTint="@color/security_blue_70"
         android:drawableTop="@drawable/btn_police"
         android:gravity="bottom|center"
-        android:text="Police call\n"
+        android:text="Police call(112)\n"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.966"
@@ -90,10 +90,10 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/security_call"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emergency_call"
-        app:layout_constraintVertical_bias="0.916" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView_medical"
@@ -105,10 +105,10 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/emergency_call"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/security_text"

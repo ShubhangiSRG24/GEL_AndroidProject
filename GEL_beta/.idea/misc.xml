@@ -24,6 +24,7 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_medication_black_24dp.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_outline_account_circle_24.xml" value="0.3463541666666667" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_userProfile.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/load_background.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/medicine_button_background.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/security_background.xml" value="0.259765625" />
@@ -34,6 +35,7 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_emergency_call.xml" value="0.2359375" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_loading.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_main.xml" value="0.2672239108409321" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_maps.xml" value="0.25" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_police_call.xml" value="0.2484375" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/app_bar_main.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/content_main.xml" value="0.3302083333333333" />
@@ -43,7 +45,7 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_security_call.xml" value="0.24765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_user.xml" value="0.33" />
-        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/nav_header_main.xml" value="0.67" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/settings_activity.xml" value="0.24765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/menu/activity_main_drawer.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/menu/activity_main_drawer2.xml" value="0.24765625" />
@@ -87,5 +89,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>
