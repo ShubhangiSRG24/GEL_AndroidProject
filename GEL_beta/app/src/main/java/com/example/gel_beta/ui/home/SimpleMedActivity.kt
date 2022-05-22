@@ -1,6 +1,5 @@
 package com.example.gel_beta.ui.home
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
@@ -25,27 +24,46 @@ class SimpleMedActivity : AppCompatActivity() {
     }
 
     private fun initData() {
-
         versionList.add(
             Versions(
-                codeName = "Android 10",
-                version = "Version 10",
-                apiLevel = "Api Level 29",
-                description = "testing A"
+                codeName = "Anti-inflammatory",
+                description = "Tylenol(Left)\n Penzal-Q(Middle)\n Geborin-jeong(Right)",
+                image = resIdByName("med_a")
             )
         )
-
         versionList.add(
             Versions(
-                codeName = "Android 9",
-                version = "Version 9",
-                apiLevel = "Api Level 24",
-                description = "testing B"
+                codeName = "Cold and cough medicine",
+                description = "For runny nose and sneeze: Actifed, Zyrtec\nFor cough: Bascrong, Mucopect",
+                image = resIdByName("med_b")
             )
         )
-
-
-
+        versionList.add(
+            Versions(
+                codeName = "Digestive medicine",
+                description = "Dages Cap.(Left)\nDr.Bearse(Right)",
+                image = resIdByName("med_c")
+            )
+        )
+        versionList.add(
+            Versions(
+                codeName = "Gastrointestinal medicine",
+                description = "Gellfos-L Suspension",
+                image = resIdByName("med_d")
+            )
+        )
+        versionList.add(
+            Versions(
+                codeName = "Anti diarrheal",
+                description = "Smecta",
+                image = resIdByName("med_e")
+            )
+        )
     }
+
+    fun resIdByName(name : String): Int {
+        return resources.getIdentifier(name, "drawable", packageName)
+    }
+
 
 }

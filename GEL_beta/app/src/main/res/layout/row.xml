@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -19,58 +20,47 @@
         >
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/code_name"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:padding="16dp"
             android:text="Code"
             android:textColor="@color/black"
-            android:textSize="22sp"
-            android:padding="16dp"
-            />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <RelativeLayout
+            android:id="@+id/expendable_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/expendable_layout"
             android:visibility="visible">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/version"
-                android:text="Version"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:fontFamily="@font/ubuntu_regular"
-                android:textStyle="bold"
-                android:padding="16dp"
-                />
-
-            <TextView
-                android:id="@+id/api_level"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/ubuntu_regular"
-                android:padding="16dp"
-                android:text="Api Level"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:padding="16dp"
                 android:text="Description TextView"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:padding="16dp"
-                android:fontFamily="@font/ubuntu_regular"
-                android:layout_below="@id/version"
-                />
+                android:textSize="14sp" />
 
+            <ImageView
+                android:id="@+id/medicineImage"
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:layout_below="@+id/description"
+                android:layout_marginTop="3dp" />
+
+            <ImageView
+                android:id="@+id/arrowUp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@+id/medicineImage"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24" />
 
         </RelativeLayout>
 

@@ -2,6 +2,7 @@ package com.example.gel_beta
 
 import android.Manifest
 import android.app.Activity
+import android.app.Application
 import android.content.Context
 import android.content.pm.PackageManager
 import android.location.Location
@@ -20,7 +21,19 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProvider.NewInstanceFactory.Companion.instance
 import com.example.gel_beta.databinding.ActivityMainBinding
+
+class MyApp: Application(){
+    lateinit var context: Context
+    init {instance=this}
+    companion object {
+        private var instance: MyApp? = null
+        fun applicationContext(): Context{
+            return instance!!.applicationContext
+        }
+    }
+}
 
 class MainActivity : AppCompatActivity() {
 
