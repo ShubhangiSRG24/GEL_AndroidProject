@@ -8,13 +8,15 @@
         tools:ignore="CoarseFineLocation" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name= "android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GEL_beta">
+        android:theme="@style/Theme.GEL_beta"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name=".UserInfoActivity"
             android:exported="false" />

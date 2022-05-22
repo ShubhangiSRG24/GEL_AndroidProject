@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_contacts"
-        android:name="com.example.gel_beta.ui.contacts.ContatctsFragment"
+        android:name="com.example.gel_beta.ui.contacts.ContactsFragment"
         android:label="Contacts"
         tools:layout="@layout/fragment_contacts" />
 
