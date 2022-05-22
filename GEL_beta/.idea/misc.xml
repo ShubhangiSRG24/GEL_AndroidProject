@@ -39,7 +39,7 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/activity_police_call.xml" value="0.2484375" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/app_bar_main.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/content_main.xml" value="0.3302083333333333" />
-        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_contacts.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_contacts.xml" value="0.22" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_emergency_call.xml" value="0.24765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_fullscreen.xml" value="0.23671875" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_home.xml" value="0.2" />
@@ -93,7 +93,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.2" />
+        <option name="scale" value="0.3302083333333333" />
       </ProjectState>
     </option>
   </component>
