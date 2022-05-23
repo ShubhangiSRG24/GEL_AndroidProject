@@ -2,10 +2,11 @@
 ## CSE518 Teamproject
 
 ## How to run the application on Android Studio
-+ 1. Register Git API Token on Android Studio
-+ 2. Git > Clone > 
-+ 2. Download Android SDK 29 ~ 32
-+ 3. 
++ 1) Register Git API Token on Android Studio
++ 2) Git > Clone > https://github.com/YCL-01/CSE518.git
++ 2) Download Android SDK 29 ~ 32
++ 3) Build
++ 4) Execute on emulater
 
 
 ## Members
