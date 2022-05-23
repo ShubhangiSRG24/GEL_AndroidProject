@@ -5,8 +5,9 @@
 1) Register Git API Token on Android Studio
 2) Git > Clone > https://github.com/YCL-01/CSE518.git
 3) Download Android SDK 29 ~ 32
-4) Build
-5) Execute on emulater
+4) Open GEL_beta as android project
+5) Build
+6) Execute on emulater
 
 
 ## Members
