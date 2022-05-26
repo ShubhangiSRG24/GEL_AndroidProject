@@ -5,6 +5,7 @@ import android.app.Activity
 import android.app.Application
 import android.content.Context
 import android.content.pm.PackageManager
+import android.location.Geocoder
 import android.location.Location
 import android.location.LocationManager
 import android.os.Bundle
@@ -23,6 +24,8 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider.NewInstanceFactory.Companion.instance
 import com.example.gel_beta.databinding.ActivityMainBinding
+import com.google.android.gms.location.FusedLocationProviderClient
+import java.util.*
 
 class MyApp: Application(){
     lateinit var context: Context
@@ -46,9 +49,10 @@ class MainActivity : AppCompatActivity() {
         Manifest.permission.ACCESS_FINE_LOCATION
     )
 
+    private var locationManager : LocationManager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         verifyAccessCoarseLocationPermissions(this)
         verifyAccessFineLocationPermissions(this)
 
@@ -79,25 +83,8 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         val locationInfo = findViewById<TextView>(R.id.locationInfo)
-        val userLocation: Location = getLatLng()
-        var locationText = "Latitude: "+userLocation.latitude.toString()+"\n"+"Longitude: "+userLocation.longitude.toString()
-        locationInfo.setText(locationText)
+        var locationText = "Latitude: "+ "\n"+"Longitude: "
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-    }
-
-    private fun getLatLng(): Location {
-        val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        var currentLatLng: Location? = null
-        var hasFineLocationPermission = ContextCompat.checkSelfPermission(this,
-            Manifest.permission.ACCESS_FINE_LOCATION)
-        var hasCoarseLocationPermission = ContextCompat.checkSelfPermission(this,
-            Manifest.permission.ACCESS_COARSE_LOCATION)
-        if(hasFineLocationPermission == PackageManager.PERMISSION_GRANTED &&
-            hasCoarseLocationPermission == PackageManager.PERMISSION_GRANTED){
-            val locationProvider = LocationManager.GPS_PROVIDER
-            currentLatLng = locationManager?.getLastKnownLocation(locationProvider)
-        }
-        return currentLatLng!!
     }
 
     fun verifyAccessCoarseLocationPermissions(activity: Activity?) {
@@ -114,7 +101,6 @@ class MainActivity : AppCompatActivity() {
             )
         }
     }
-
     fun verifyAccessFineLocationPermissions(activity: Activity?) {
         // Check if we have write permission
         val permission = ActivityCompat.checkSelfPermission(
@@ -129,4 +115,6 @@ class MainActivity : AppCompatActivity() {
             )
         }
     }
+
+
 }

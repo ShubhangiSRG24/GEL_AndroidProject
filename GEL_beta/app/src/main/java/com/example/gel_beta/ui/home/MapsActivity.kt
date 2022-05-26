@@ -46,24 +46,15 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
         // Add a marker in Sydney and move the camera
-        var userLocation: Location = getLatLng()
-        var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
-        mMap.addMarker(MarkerOptions().position(mylocation).title("My location"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 15F))
-    }
+        //var userLocation: Location = getLatLng()
+        //var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
+        val sydney = LatLng(-34.0, 151.0)
+        mMap.addMarker(MarkerOptions()
+            .position(sydney)
+            .title("Marker in Sydney"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
 
-    private fun getLatLng(): Location{
-        val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        var currentLatLng: Location? = null
-        var hasFineLocationPermission = ContextCompat.checkSelfPermission(this,
-            Manifest.permission.ACCESS_FINE_LOCATION)
-        var hasCoarseLocationPermission = ContextCompat.checkSelfPermission(this,
-            Manifest.permission.ACCESS_COARSE_LOCATION)
-        if(hasFineLocationPermission == PackageManager.PERMISSION_GRANTED &&
-            hasCoarseLocationPermission == PackageManager.PERMISSION_GRANTED){
-            val locationProvider = LocationManager.GPS_PROVIDER
-            currentLatLng = locationManager?.getLastKnownLocation(locationProvider)
-        }
-        return currentLatLng!!
+        //mMap.addMarker(MarkerOptions().position(mylocation).title("My location"))
+        //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 15F))
     }
 }

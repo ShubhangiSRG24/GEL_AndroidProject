@@ -40,8 +40,10 @@ class TextMessageActivity : AppCompatActivity(), View.OnClickListener{
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.btn_stalker -> {
-                var userLocation: Location = getLatLng()
-                var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
+                //var userLocation: Location = getLatLng()
+                //var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
+                //var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n지금 이상한 사람이 따라오고 있어요, 도와주세요"
+                var userLocation: LatLng = LatLng(-34.0, 151.0)
                 var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n지금 이상한 사람이 따라오고 있어요, 도와주세요"
                 val num = "smsto:01080085899"
                 var nextIntent = Intent(Intent.ACTION_SENDTO, Uri.parse(num))
@@ -49,46 +51,38 @@ class TextMessageActivity : AppCompatActivity(), View.OnClickListener{
                 startActivity(nextIntent)
             }
             R.id.btn_lost -> {
-                var userLocation: Location = getLatLng()
-                var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
-                var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n여기가 어딘지 모르겠습니다. 주변에 아무도 없습니다. 곧 핸드폰이 꺼집니다. 도와주세요"
+                // var userLocation: Location = getLatLng()
+                // var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
+                // var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n여기가 어딘지 모르겠습니다. 주변에 아무도 없습니다. 곧 핸드폰이 꺼집니다. 도와주세요"
+                var userLocation: LatLng = LatLng(-34.0, 151.0)
+                var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n지금 이상한 사람이 따라오고 있어요, 도와주세요"
                 val num = "smsto:01080085899"
                 var nextIntent = Intent(Intent.ACTION_SENDTO, Uri.parse(num))
                 nextIntent.putExtra("sms_body", textMessage)
                 startActivity(nextIntent)
             }
             R.id.btn_blackmail -> {
-                var userLocation: Location = getLatLng()
-                var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
-                var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n협박당하고 있습니다 부디 도와주세요"
+                //var userLocation: Location = getLatLng()
+                //var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
+                //var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n협박당하고 있습니다 부디 도와주세요"
+                var userLocation: LatLng = LatLng(-34.0, 151.0)
+                var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n지금 이상한 사람이 따라오고 있어요, 도와주세요"
                 val num = "smsto:01080085899"
                 var nextIntent = Intent(Intent.ACTION_SENDTO, Uri.parse(num))
                 nextIntent.putExtra("sms_body", textMessage)
                 startActivity(nextIntent)
             }
             R.id.btn_lockedup -> {
-                var userLocation: Location = getLatLng()
-                var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
-                var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n어딘지 모르게 갇혀있고 누군가가 감시하고 있습니다. 도와주세요"
+                //var userLocation: Location = getLatLng()
+                //var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
+                //var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n어딘지 모르게 갇혀있고 누군가가 감시하고 있습니다. 도와주세요"
+                var userLocation: LatLng = LatLng(-34.0, 151.0)
+                var textMessage = "위치: 경도 "+userLocation.latitude.toString()+"\n"+"위도 "+userLocation.longitude.toString() + "\n지금 이상한 사람이 따라오고 있어요, 도와주세요"
                 val num = "smsto:01080085899"
                 var nextIntent = Intent(Intent.ACTION_SENDTO, Uri.parse(num))
                 nextIntent.putExtra("sms_body", textMessage)
                 startActivity(nextIntent)
             }
         }
-    }
-    private fun getLatLng(): Location {
-        val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        var currentLatLng: Location? = null
-        var hasFineLocationPermission = ContextCompat.checkSelfPermission(this,
-            Manifest.permission.ACCESS_FINE_LOCATION)
-        var hasCoarseLocationPermission = ContextCompat.checkSelfPermission(this,
-            Manifest.permission.ACCESS_COARSE_LOCATION)
-        if(hasFineLocationPermission == PackageManager.PERMISSION_GRANTED &&
-            hasCoarseLocationPermission == PackageManager.PERMISSION_GRANTED){
-            val locationProvider = LocationManager.GPS_PROVIDER
-            currentLatLng = locationManager?.getLastKnownLocation(locationProvider)
-        }
-        return currentLatLng!!
     }
 }
