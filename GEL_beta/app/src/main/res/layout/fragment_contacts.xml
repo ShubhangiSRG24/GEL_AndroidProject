@@ -25,42 +25,36 @@
                 android:id="@+id/btn_contact_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button"
                 android:background="#00FFFFFF"
                 android:drawableBottom="@drawable/contact_a" />
             <Button
                 android:id="@+id/btn_contact_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button"
                 android:background="#00FFFFFF"
                 android:drawableBottom="@drawable/contact_b" />
             <Button
                 android:id="@+id/btn_contact_c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button"
                 android:background="#00FFFFFF"
                 android:drawableBottom="@drawable/contact_c" />
             <Button
                 android:id="@+id/btn_contact_d"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button"
                 android:background="#00FFFFFF"
                 android:drawableBottom="@drawable/contact_d" />
             <Button
                 android:id="@+id/btn_contact_e"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button"
                 android:background="#00FFFFFF"
                 android:drawableBottom="@drawable/contact_f" />
             <Button
                 android:id="@+id/btn_contact_f"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button"
                 android:background="#00FFFFFF"
                 android:drawableBottom="@drawable/contact_g" />
         </LinearLayout>
