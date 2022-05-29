@@ -65,7 +65,7 @@
         android:background="@drawable/radius_security"
         android:drawableTop="@drawable/btn_message"
         android:gravity="bottom|center"
-        android:text="Police Text\n"
+        android:text="Police\nText\n"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

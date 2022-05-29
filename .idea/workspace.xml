@@ -10,9 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c58e2b3a-8731-47e1-8e1e-0318ad0d5002" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CSE518.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GEL_beta/app/src/main/java/com/example/gel_beta/LocationHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEL_beta/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEL_beta/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEL_beta/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEL_beta/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEL_beta/app/src/main/java/com/example/gel_beta/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/GEL_beta/app/src/main/java/com/example/gel_beta/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEL_beta/app/src/main/res/drawable/radius_emergency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEL_beta/app/src/main/res/drawable/radius_emergency.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEL_beta/app/src/main/res/drawable/radius_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEL_beta/app/src/main/res/drawable/radius_map.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEL_beta/app/src/main/res/drawable/radius_security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEL_beta/app/src/main/res/drawable/radius_security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEL_beta/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEL_beta/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +45,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="exceleditor.install" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GEL_beta" />
     <property name="memory.settings.postsync.last.time.stamp" value="1650861040913" />
   </component>
   <component name="RunManager">
@@ -122,5 +127,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
