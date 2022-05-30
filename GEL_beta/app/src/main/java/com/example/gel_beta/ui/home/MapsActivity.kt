@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.core.content.ContextCompat
+import com.example.gel_beta.MainActivity
 import com.example.gel_beta.R
 import com.example.gel_beta.databinding.ActivityMapsBinding
 
@@ -23,6 +24,7 @@ import com.google.android.material.chip.ChipGroup
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
+    private lateinit var userLocation: Location
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,15 +48,17 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
         // Add a marker in Sydney and move the camera
-        //var userLocation: Location = getLatLng()
-        //var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
+        userLocation = MainActivity.userLocation!!
+        var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
+        System.out.println("mylocation: $mylocation")
+        /*
         val sydney = LatLng(-34.0, 151.0)
         mMap.addMarker(MarkerOptions()
             .position(sydney)
             .title("Marker in Sydney"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-
-        //mMap.addMarker(MarkerOptions().position(mylocation).title("My location"))
-        //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 15F))
+        */
+        mMap.addMarker(MarkerOptions().position(mylocation).title("My location"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 10F))
     }
 }

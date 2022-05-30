@@ -4,6 +4,7 @@ import android.Manifest
 import android.app.Activity
 import android.app.Application
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Geocoder
 import android.location.Location
@@ -11,8 +12,10 @@ import android.location.LocationListener
 import android.location.LocationManager
 import android.os.Bundle
 import android.os.Looper
+import android.provider.Settings
 import android.view.Menu
 import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -24,7 +27,9 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.location.LocationManagerCompat.isLocationEnabled
 import androidx.lifecycle.ViewModelProvider.NewInstanceFactory.Companion.instance
+import com.example.gel_beta.MainActivity.Companion.PERMISSION_REQUEST_ACCESS_LOCATION
 import com.example.gel_beta.databinding.ActivityMainBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
@@ -61,19 +66,19 @@ class MainActivity : AppCompatActivity() {
         Manifest.permission.ACCESS_FINE_LOCATION
     )
 
-    companion object GpsLocation{
+    companion object{
+        private const val PERMISSION_REQUEST_ACCESS_LOCATION = 100
         var userLocation : Location? = null
     }
 
-    private var mFusedLocationProviderClient: FusedLocationProviderClient? = null // 현재 위치를 가져오기 위한 변수
-    lateinit var mLastLocation: Location // 위치 값을 가지고 있는 객체
-    internal lateinit var mLocationRequest: LocationRequest // 위치 정보 요청의 매개변수를 저장하는
-    private val REQUEST_PERMISSION_LOCATION = 10
+    private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
+    private lateinit var mLastLocation: Location
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        verifyAccessCoarseLocationPermissions(this)
-        verifyAccessFineLocationPermissions(this)
+
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
+        getCurrentLocation();
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -82,12 +87,6 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-
-        mLocationRequest =  LocationRequest.create().apply {
-
-            priority = LocationRequest.PRIORITY_HIGH_ACCURACY
-
-        }
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -100,6 +99,89 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
+    private fun getCurrentLocation() {
+        if(checkPermissions()){
+            if(isLocationEnabled()){
+                if(ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) !=
+                        PackageManager.PERMISSION_GRANTED &&
+                    ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) !=
+                        PackageManager.PERMISSION_GRANTED)
+                {
+                    requestPermission()
+                    return
+                }
+
+                fusedLocationProviderClient.lastLocation.addOnCompleteListener(this){ task ->
+                    val location:Location?=task.result
+                    if(location==null){
+                        Toast.makeText(this,"Null Recieved", Toast.LENGTH_LONG).show()
+                    }
+                    else{
+                        Toast.makeText(this,"Get Success", Toast.LENGTH_LONG).show()
+                        userLocation = location
+                        val locationInfo = findViewById<TextView>(R.id.locationInfo)
+                        var locationText = "Latitude: "+ location.latitude+ "\n"+"Longitude: "+ location.longitude
+                        locationInfo.setText(locationText)
+                    }
+                }
+
+            }
+            else{
+                Toast.makeText(this,"Turn on location", Toast.LENGTH_LONG).show()
+                val intent = Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)
+                startActivity(intent)
+            }
+        }
+        else{
+            requestPermission()
+        }
+    }
+
+    private fun requestPermission() {
+        ActivityCompat.requestPermissions(
+            this, arrayOf(android.Manifest.permission.ACCESS_COARSE_LOCATION,
+                android.Manifest.permission.ACCESS_FINE_LOCATION,
+                android.Manifest.permission.ACCESS_BACKGROUND_LOCATION),
+            PERMISSION_REQUEST_ACCESS_LOCATION
+        )
+    }
+
+    private fun checkPermissions(): Boolean{
+        if(ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)==PackageManager.PERMISSION_GRANTED &&
+            ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED)
+        {
+            return true
+        }
+        return false
+    }
+
+    private fun isLocationEnabled(): Boolean {
+        val locationManager:LocationManager=getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)||locationManager.isProviderEnabled(
+            LocationManager.NETWORK_PROVIDER
+        )
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if(requestCode == PERMISSION_REQUEST_ACCESS_LOCATION){
+            if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                Toast.makeText(applicationContext, "Granted", Toast.LENGTH_SHORT).show()
+                getCurrentLocation()
+            }
+            else{
+                Toast.makeText(applicationContext, "Denied", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+
+
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
@@ -110,50 +192,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         val locationInfo = findViewById<TextView>(R.id.locationInfo)
         var locationText = "Latitude: "+ userLocation?.latitude+ "\n"+"Longitude: "+ userLocation?.longitude
-        //locationInfo.setText(locationText)
+        locationInfo.setText(locationText)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-    }
-
-    private fun startLocationUpdates() {
-
-        //FusedLocationProviderClient의 인스턴스를 생성.
-        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-            && ActivityCompat.checkSelfPermission(this,Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return
-        }
-        // 기기의 위치에 관한 정기 업데이트를 요청하는 메서드 실행
-        // 지정한 루퍼 스레드(Looper.myLooper())에서 콜백(mLocationCallback)으로 위치 업데이트를 요청
-        mFusedLocationProviderClient!!.requestLocationUpdates(mLocationRequest, mLocationCallback, Looper.myLooper())
-    }
-
-
-    fun verifyAccessCoarseLocationPermissions(activity: Activity?) {
-        // Check if we have write permission
-        val permission = ActivityCompat.checkSelfPermission(
-            activity!!,
-            Manifest.permission.ACCESS_COARSE_LOCATION
-        )
-        if (permission != PackageManager.PERMISSION_GRANTED) {
-            // We don't have permission so prompt the user
-            ActivityCompat.requestPermissions(activity,
-                PERMISSIONS_GPS,
-                REQUEST_GPS
-            )
-        }
-    }
-    fun verifyAccessFineLocationPermissions(activity: Activity?) {
-        // Check if we have write permission
-        val permission = ActivityCompat.checkSelfPermission(
-            activity!!,
-            Manifest.permission.ACCESS_FINE_LOCATION
-        )
-        if (permission != PackageManager.PERMISSION_GRANTED) {
-            // We don't have permission so prompt the user
-            ActivityCompat.requestPermissions(activity,
-                PERMISSIONS_GPS,
-                REQUEST_GPS
-            )
-        }
     }
 }
