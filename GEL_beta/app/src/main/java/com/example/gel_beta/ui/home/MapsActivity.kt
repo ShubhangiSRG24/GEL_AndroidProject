@@ -51,14 +51,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         userLocation = MainActivity.userLocation!!
         var mylocation = LatLng(userLocation.latitude, userLocation.longitude)
         System.out.println("mylocation: $mylocation")
-        /*
-        val sydney = LatLng(-34.0, 151.0)
-        mMap.addMarker(MarkerOptions()
-            .position(sydney)
-            .title("Marker in Sydney"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-        */
         mMap.addMarker(MarkerOptions().position(mylocation).title("My location"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 10F))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 15F))
     }
 }
