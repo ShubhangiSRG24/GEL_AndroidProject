@@ -8,19 +8,19 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.gel_beta.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="HOME"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_userInformation"
         android:name="com.example.gel_beta.ui.user_information.UserFragment"
-        android:label="User Information"
+        android:label="USER INFORMATION"
         tools:layout="@layout/fragment_user" />
 
     <fragment
         android:id="@+id/nav_contacts"
         android:name="com.example.gel_beta.ui.contacts.ContactsFragment"
-        android:label="Contacts"
+        android:label="CONTACTS"
         tools:layout="@layout/fragment_contacts" />
 
 </navigation>

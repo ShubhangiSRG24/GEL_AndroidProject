@@ -29,4 +29,11 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    <!-- Test -->
+
+    <string name="time_square">Time square</string>
+    <string name="i_am_snippet">I am snippet</string>
+
+    <string name="chelsea_market">Chelsea Market</string>
 </resources>

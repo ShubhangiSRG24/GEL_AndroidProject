@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/radius"
     tools:context=".ui.user_information.UserFragment"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-35dp">
@@ -13,9 +12,9 @@
         android:id="@+id/profileImg"
         android:layout_width="146dp"
         android:layout_height="135dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_userfile" />

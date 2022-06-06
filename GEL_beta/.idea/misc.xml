@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/btn_ambulance.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/btn_map.xml" value="0.32265625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/btn_medication.xml" value="0.354296875" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/btn_message.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/btn_police.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/color_background.xml" value="0.259765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/emergency_background.xml" value="0.259765625" />
@@ -14,10 +16,17 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/home_background.xml" value="0.35885416666666664" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/home_background2.xml" value="0.260546875" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_airplanemode_active_24.xml" value="0.3463541666666667" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_call_end_24.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.3463541666666667" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.29035087719298247" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_keyboard_arrow_up_24.xml" value="0.29035087719298247" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_local_hospital_24.xml" value="0.29035087719298247" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_local_police_24.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_mail_outline_24.xml" value="0.259765625" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_map_24.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_medical_services_24.xml" value="0.3463541666666667" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_medication_24.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_my_location_24.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_baseline_userinfo_24.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3463541666666667" />
@@ -53,15 +62,17 @@
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_contacts.xml" value="0.22" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_emergency_call.xml" value="0.24765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_fullscreen.xml" value="0.23671875" />
-        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_security_call.xml" value="0.24765625" />
-        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_user.xml" value="0.33" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/fragment_user.xml" value="0.25" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/row.xml" value="0.25" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/layout/settings_activity.xml" value="0.24765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/menu/activity_main_drawer.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/menu/activity_main_drawer2.xml" value="0.24765625" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/menu/main.xml" value="0.2" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.29035087719298247" />
+        <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/xml/root_preferences.xml" value="0.25" />
         <entry key="..\:/Users/young/Workspace/GEL_beta/app/src/main/res/drawable-v24/account_circle-48px.xml" value="0.39814814814814814" />
         <entry key="..\:/Users/young/Workspace/GEL_beta/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3463541666666667" />
@@ -101,12 +112,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.3302083333333333" />
-      </ProjectState>
-    </option>
   </component>
 </project>
