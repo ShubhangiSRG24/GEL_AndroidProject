@@ -106,6 +106,13 @@ class MainActivity : AppCompatActivity() {
                     val location:Location?=task.result
                     if(location==null){
                         Toast.makeText(this,"Null Recieved", Toast.LENGTH_LONG).show()
+                        val locationInfo = findViewById<TextView>(R.id.locationInfo)
+                        val userName = findViewById<TextView>(R.id.userName_nav)
+                        var latitude = "37.3762527"
+                        var longitude = "126.667168"
+                        var locationText = "Latitude:$latitude \n Longitude:$longitude"
+                        locationInfo.setText(locationText)
+                        userName.setText(Name)
                     }
                     else{
                         Toast.makeText(this,"Get Success", Toast.LENGTH_LONG).show()
@@ -114,9 +121,8 @@ class MainActivity : AppCompatActivity() {
                         val userName = findViewById<TextView>(R.id.userName_nav)
 
                         var locationText = "Latitude: "+ location.latitude+ "\n"+"Longitude: "+ location.longitude
-                        var userNameText = MainActivity.Name
                         locationInfo.setText(locationText)
-                        userName.setText(userNameText)
+                        userName.setText(Name)
                     }
                 }
 
