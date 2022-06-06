@@ -1,22 +1,17 @@
 package com.example.gel_beta
 
 import android.Manifest
-import android.app.Activity
 import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.location.Geocoder
 import android.location.Location
-import android.location.LocationListener
 import android.location.LocationManager
 import android.os.Bundle
-import android.os.Looper
 import android.provider.Settings
 import android.view.Menu
 import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -26,19 +21,9 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import androidx.core.location.LocationManagerCompat.isLocationEnabled
-import androidx.lifecycle.ViewModelProvider.NewInstanceFactory.Companion.instance
-import com.example.gel_beta.MainActivity.Companion.PERMISSION_REQUEST_ACCESS_LOCATION
 import com.example.gel_beta.databinding.ActivityMainBinding
 import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
-import java.util.*
-import kotlin.concurrent.thread
 
 class MyApp: Application(){
     lateinit var context: Context
@@ -69,6 +54,11 @@ class MainActivity : AppCompatActivity() {
     companion object{
         private const val PERMISSION_REQUEST_ACCESS_LOCATION = 100
         var userLocation : Location? = null
+        var Name : String? = "Youngchan Lim"
+        var Nationality : String? = "Republic of Korea"
+        var PassPortNo : String? = "XX12345678"
+        var EmergencyContactA : String? = "xxxxxxxx@google.com"
+        var EmergencyContactB : String? = "+82-10-xxxx-xxxx"
     }
 
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
@@ -120,8 +110,12 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this,"Get Success", Toast.LENGTH_LONG).show()
                         userLocation = location
                         val locationInfo = findViewById<TextView>(R.id.locationInfo)
+                        val userName = findViewById<TextView>(R.id.userName_nav)
+
                         var locationText = "Latitude: "+ location.latitude+ "\n"+"Longitude: "+ location.longitude
+                        var userNameText = MainActivity.Name
                         locationInfo.setText(locationText)
+                        userName.setText(userNameText)
                     }
                 }
 
