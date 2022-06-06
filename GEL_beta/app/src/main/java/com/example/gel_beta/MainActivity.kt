@@ -24,6 +24,7 @@ import androidx.core.app.ActivityCompat
 import com.example.gel_beta.databinding.ActivityMainBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.model.LatLng
 
 class MyApp: Application(){
     lateinit var context: Context
