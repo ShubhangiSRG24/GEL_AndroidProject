@@ -57,7 +57,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mGoogleMap = googleMap
         mMapsController = MapsController(this, mGoogleMap)
         mMapsController.setCustomMarker()
-        userLocation = MainActivity.userLocation!!
+        //userLocation = MainActivity.userLocation!!
         //val suny = LatLng(userLocation.latitude,userLocation.longitude)
         val suny = LatLng(37.3762527,126.667168)
         mGoogleMap.addMarker(MarkerOptions().position(suny).title("My location"))
@@ -67,7 +67,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         btn_emergency.setOnClickListener{
             val position = mGoogleMap.cameraPosition.target.latitude.toString() + "," + mGoogleMap.cameraPosition.target.longitude.toString()
             val placesCall = RetrofitClient.googleMethods().getNearbySearch(position, Constants.RADIUS_1000, Constants.TYPE_BAR_MEDICAL, Constants.GOOGLE_API_KEY)
-            placesCall.enqueue(object : Callback<NearbySearch> {
+            placesCall.enqueue(object : retrofit2.Callback<NearbySearch> {
                 override fun onResponse(call: Call<NearbySearch>, response: Response<NearbySearch>) {
                     val nearbySearch = response.body()!!
                     mMapsController.clearMarkers()
@@ -91,7 +91,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         btn_security.setOnClickListener {
             val position = mGoogleMap.cameraPosition.target.latitude.toString() + "," + mGoogleMap.cameraPosition.target.longitude.toString()
             val placesCall = RetrofitClient.googleMethods().getNearbySearch(position, Constants.RADIUS_1000, Constants.TYPE_BAR_SECURITY, Constants.GOOGLE_API_KEY)
-            placesCall.enqueue(object : Callback<NearbySearch> {
+            placesCall.enqueue(object : retrofit2.Callback<NearbySearch> {
                 override fun onResponse(call: Call<NearbySearch>, response: Response<NearbySearch>) {
                     val nearbySearch = response.body()!!
                     mMapsController.clearMarkers()

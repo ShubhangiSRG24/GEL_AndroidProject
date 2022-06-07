@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/SHUBHANGI/AndroidStudioProjects/CSE518/GEL_beta/app/src/main/res/drawable/btn_message.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/SHUBHANGI/AndroidStudioProjects/CSE518/GEL_beta/app/src/main/res/layout/activity_text_message.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable-v24/emergency_contact.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.29035087719298247" />
         <entry key="..\:/Users/young/Workspace/CSE518/GEL_beta/app/src/main/res/drawable-v24/user_icon.xml" value="0.29035087719298247" />
