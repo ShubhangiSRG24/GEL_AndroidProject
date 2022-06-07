@@ -63,21 +63,21 @@ class TextMessageActivity : AppCompatActivity(), View.OnClickListener{
                 startActivity(nextIntent)
             }
             R.id.btn_lost -> {
-                var textMessage = "[경도:$latitude/위도:$longitude]\n\n지금 이상한 사람이 따라오고 있어요, 도와주세요"
+                var textMessage = "[경도:$latitude/위도:$longitude]\n\n지금 제가 어디있는지 모르겠습니다, 도와주세요"
                 val num = "smsto:01080085899"
                 var nextIntent = Intent(Intent.ACTION_SENDTO, Uri.parse(num))
                 nextIntent.putExtra("sms_body", textMessage)
                 startActivity(nextIntent)
             }
             R.id.btn_blackmail -> {
-                var textMessage = "[경도:$latitude/위도:$longitude]\n\n지금 이상한 사람이 따라오고 있어요, 도와주세요"
+                var textMessage = "[경도:$latitude/위도:$longitude]\n\n지금 협박당하고 있습니다, 도와주세요"
                 val num = "smsto:01080085899"
                 var nextIntent = Intent(Intent.ACTION_SENDTO, Uri.parse(num))
                 nextIntent.putExtra("sms_body", textMessage)
                 startActivity(nextIntent)
             }
             R.id.btn_lockedup -> {
-                var textMessage = "[경도:$latitude/위도:$longitude]\n\n지금 이상한 사람이 따라오고 있어요, 도와주세요"
+                var textMessage = "[경도:$latitude/위도:$longitude]\n\n지금 어딘가에 갇혀있습니다, 도와주세요"
                 val num = "smsto:01080085899"
                 var nextIntent = Intent(Intent.ACTION_SENDTO, Uri.parse(num))
                 nextIntent.putExtra("sms_body", textMessage)

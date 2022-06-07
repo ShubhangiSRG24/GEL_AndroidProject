@@ -57,9 +57,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mGoogleMap = googleMap
         mMapsController = MapsController(this, mGoogleMap)
         mMapsController.setCustomMarker()
-        //userLocation = MainActivity.userLocation!!
-        //val suny = LatLng(userLocation.latitude,userLocation.longitude)
-        val suny = LatLng(37.3762527,126.667168)
+        userLocation = MainActivity.userLocation!!
+        val suny = LatLng(userLocation.latitude,userLocation.longitude)
+        //val suny = LatLng(37.3762527,126.667168)
         mGoogleMap.addMarker(MarkerOptions().position(suny).title("My location"))
         mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(suny, 15F))
 
