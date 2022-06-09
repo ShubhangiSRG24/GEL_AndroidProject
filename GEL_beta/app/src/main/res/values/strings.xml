@@ -31,9 +31,11 @@
     <string name="title_activity_maps">MapsActivity</string>
 
     <!-- Test -->
-
     <string name="time_square">Time square</string>
     <string name="i_am_snippet">I am snippet</string>
-
     <string name="chelsea_market">Chelsea Market</string>
+
+    <!-- About Page -->
+    <string name="aboutA">  Our application aims to provide immediate emergency help to foreigners living in Korea with curated solutions for medical and personal security along with additional contact information at their expense. Hence, our target users are foreigners who stay in Korea, unaware of the native language and thus find it challenging to get emergency help.</string>
+    <string name="aboutB">  The application provides functionalities like calling an ambulance or police office in an emergency situation, medication for common ailments, sharing location over text message to the police station, nearby location of hospitals and police stations and necessary additional contacts for other purposes.</string>
 </resources>
