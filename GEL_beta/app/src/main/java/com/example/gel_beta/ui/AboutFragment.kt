@@ -33,6 +33,9 @@ class AboutFragment : Fragment(), View.OnClickListener{
         val material_d: Button = view.findViewById(R.id.btn_about_d)
         material_d.setOnClickListener(this)
 
+        val material_e: Button = view.findViewById(R.id.btn_about_e)
+        material_e.setOnClickListener(this)
+
         return view
     }
 
@@ -77,6 +80,13 @@ class AboutFragment : Fragment(), View.OnClickListener{
                 var nextIntent = Intent(
                     Intent.ACTION_VIEW,
                     Uri.parse("https://drive.google.com/file/d/1F9K3aj8w0ptcc4kc4ZVyE8vQle0aaKYN/view?usp=sharing")
+                )
+                startActivity(nextIntent)
+            }
+            R.id.btn_about_e -> {
+                var nextIntent = Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://drive.google.com/file/d/1AhWthUHhubfS_ZXVmAgIUUdt3SZV7DwO/view?usp=sharing")
                 )
                 startActivity(nextIntent)
             }

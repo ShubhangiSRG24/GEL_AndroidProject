@@ -184,7 +184,16 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="20dp"
                 android:background="#00FFFFFF"
-                android:text="๏ Mid-fidelity video" />
+                android:text="๏ Mid-fidelity video"/>
+
+            <Button
+                android:id="@+id/btn_about_e"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:background="#00FFFFFF"
+                android:text="๏ Final video"/>
 
 
         </LinearLayout>
