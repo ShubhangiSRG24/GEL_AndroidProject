@@ -8,6 +8,7 @@
 4) Open GEL_beta as android project
 5) Build
 6) Execute on emulater
+7) FYI: If the application doesn't work well, please check your security program
 
 
 ## Members
